@@ -32,7 +32,7 @@
                 background: #a9a9a9;
             }
             
-            .main > .slider {
+            .main > .container > .slider {
                 width: 100%;
                 position: relative;
             }
@@ -43,12 +43,26 @@
             .main > .slider > img:first-child {
                 z-index: 1;
             }
-            .main > .slider > img:nth-child(2) {
+            .main > .container > .slider > img:nth-child(2) {
                 z-index: 0;
             }
             
             .main > .container {
                 text-align: center;
+            }
+            .main > .container > .slider > .buttons {
+                display: inline-block;
+                width: 78%;
+            }
+            .main > .container > .slider > .buttons > .forward {
+                float: right;
+                border-radius: 100%;
+                padding: 5px 8px;
+            }
+            .main > .container > .slider > .buttons > .backward {
+                float: left;
+                border-radius: 100%;
+                padding: 5px 8px;
             }
         </style>
     </head>
@@ -70,8 +84,8 @@
                     <img src="https://www.w3schools.com/w3images/coffee.jpg" alt="coffee" style="display: none;" />
                     <img src="https://www.w3schools.com/w3images/sound.jpg" alt="sound" style="display: none;" />
                     <section class="buttons">
-                         <button type="button"><</button>
-                         <button type="button">></button>
+                         <button class="forward" type="button"> → </button>
+                         <button class="backward" type="button"> ← </button>
                     </section>
                 </section>
             </section>
