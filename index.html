@@ -10,6 +10,8 @@
                 padding: 0;
                 margin: 0;
                 text-decoration: none;
+                box-sizing: border-box;
+                font-family: Sans-Serif;
             }
             a {
                 color: #000;
@@ -18,7 +20,7 @@
                 font-size: 16px;
                 line-height: 1.6;
             }
-            h1 {
+            h1, h2, h3, h4 {
                 font-weight: 500;
             }
             #header {
@@ -117,6 +119,23 @@
             .main > .container > .cards > article:nth-child(4) > h1 {
                 margin: 20px 0;
             }
+            
+            .main > .container > .card-sec {
+                margin: 80px 0;
+            }
+            .main > .container > .card-sec > .price-card {
+                width: 32.18%;
+                display: inline-block;
+                border: 1px solid #a9a9a9;
+                margin: 0 5px;
+            }
+            .main > .container > .card-sec > .price-card:hover {
+                box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+            }
+            .main > .container > .card-sec > article:nth-child(1) > h2 {
+                background: #000000;
+                color: #ffffff;
+            }
         </style>
     </head>
     <body>
@@ -176,7 +195,43 @@
                 </section>
             </section>
             <section class="container">
-                
+                <h1>Pricing Plans</h1>
+                <p>Choose a pricing plan that fits your needs.</p>
+                <section class="card-sec">
+                    <article class="price-card">
+                        <h2>Basic</h2>
+                        <p>100GB Storage</p>
+                        <p>100 Emails</p>
+                        <p>10 Domains</p>
+                        <p>Endless Support</p>
+                        <article>
+                            <h2>&dollar; 10</h2>
+                            <small style="color: #808080;">per month</small>
+                        </article>
+                    </article>
+                    <article class="price-card">
+                        <h2>Pro</h2>
+                        <p>250GB Storage</p>
+                        <p>150 Emails</p>
+                        <p>15 Domains</p>
+                        <p>Endless Support</p>
+                        <article>
+                            <h2>&dollar; 25</h2>
+                            <small style="color: #808080;">per month</small>
+                        </article>
+                    </article>
+                    <article class="price-card">
+                        <h2>Premium</h2>
+                        <p>500GB Storage</p>
+                        <p>200 Emails</p>
+                        <p>20 Domains</p>
+                        <p>Endless Support</p>
+                        <article>
+                            <h2>&dollar; 50</h2>
+                            <small style="color: #808080;">per month</small>
+                        </article>
+                    </article>
+                </section>
             </section>
         </div>
     </body>
