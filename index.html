@@ -9,6 +9,7 @@
             * {
                 padding: 0;
                 margin: 0;
+                border: none;
                 text-decoration: none;
                 box-sizing: border-box;
                 font-family: Sans-Serif;
@@ -22,6 +23,9 @@
             }
             h1, h2, h3, h4 {
                 font-weight: 500;
+            }
+            button {
+                padding: 12px 24px;
             }
             #header {
                 text-align: center;
@@ -76,7 +80,7 @@
                 padding: 5px 8px;
             }
             
-            .main > section:nth-child(2) > h1 {
+            .main > section:nth-child(2) > h1, .main > section:nth-child(4) > h1 {
                 border-bottom: 5px solid;
                 padding-bottom: 10px;
                 width: fit-content;
@@ -92,7 +96,7 @@
                 padding:  20px 16px;
             }
             .main > .container > .cards > article:nth-child(1) {
-                background: #f1f1f1;
+                background: #e5e5e5;
                 color: #000000;
             }
             .main > .container > .cards > article:nth-child(1) > h1 {
@@ -106,7 +110,7 @@
                 margin: 20px 0;
             }
             .main > .container > .cards > article:nth-child(3) {
-                background: #616161;
+                background: #555555;
                 color: #ffffff;
             }
             .main > .container > .cards > article:nth-child(3) > h1 {
@@ -132,9 +136,43 @@
             .main > .container > .card-sec > .price-card:hover {
                 box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
             }
-            .main > .container > .card-sec > article:nth-child(1) > h2 {
+            .main > .container > .card-sec > article:nth-child(1) > h2, article:nth-child(3) > h2 {
                 background: #000000;
                 color: #ffffff;
+                padding: 32px 16px;
+            }
+            .main > .container > .card-sec > article:nth-child(2) > h2 {
+                background: #555555;
+                color: #ffffff;
+                padding: 32px 16px;
+            }
+            .main > .container > .card-sec > .price-card > p {
+                padding: 16px;
+                border-bottom: 0.5px solid #a9a9a9;
+            }
+            .main > .container > .card-sec > .price-card > .price {
+                padding: 16px;
+                line-height: 2;
+            }
+            .main > .container > .card-sec > .price-card > .price > h2 {
+                font-size: 34px;
+            }
+            .main > .container > .card-sec > .price-card > .sign-btn {
+                background: #e5e5e5;
+                padding: 24px;
+            }
+            .main > .container > .card-sec > .price-card > .sign-btn > button {
+                background: #4CAF50;
+                color: #ffffff;
+            }
+            .main > .container > .card-sec > article:nth-child(1) > .sign-btn > button:hover,
+            .main > .container > .card-sec > article:nth-child(3) > .sign-btn > button:hover {
+                background: #000000;
+                cursor: pointer;
+            }
+            .main > .container > .card-sec > article:nth-child(2) > .sign-btn > button:hover {
+                background: #555555;
+                cursor: pointer;
             }
         </style>
     </head>
@@ -161,6 +199,7 @@
                     </section>
                 </section>
             </section>
+            
             <section class="container">
                 <h1>What We Offer</h1>
                 <section class="cards">
@@ -194,6 +233,7 @@
                     </article>
                 </section>
             </section>
+            
             <section class="container">
                 <h1>Pricing Plans</h1>
                 <p>Choose a pricing plan that fits your needs.</p>
@@ -204,9 +244,12 @@
                         <p>100 Emails</p>
                         <p>10 Domains</p>
                         <p>Endless Support</p>
-                        <article>
+                        <article class="price">
                             <h2>&dollar; 10</h2>
                             <small style="color: #808080;">per month</small>
+                        </article>
+                        <article class="sign-btn">
+                            <button type="button">Sign Up</button>
                         </article>
                     </article>
                     <article class="price-card">
@@ -215,9 +258,12 @@
                         <p>150 Emails</p>
                         <p>15 Domains</p>
                         <p>Endless Support</p>
-                        <article>
+                        <article class="price">
                             <h2>&dollar; 25</h2>
                             <small style="color: #808080;">per month</small>
+                        </article>
+                        <article class="sign-btn">
+                            <button type="button">Sign Up</button>
                         </article>
                     </article>
                     <article class="price-card">
@@ -226,10 +272,22 @@
                         <p>200 Emails</p>
                         <p>20 Domains</p>
                         <p>Endless Support</p>
-                        <article>
+                        <article class="price">
                             <h2>&dollar; 50</h2>
                             <small style="color: #808080;">per month</small>
                         </article>
+                        <article class="sign-btn">
+                            <button type="button">Sign Up</button>
+                        </article>
+                    </article>
+                </section>
+            </section>
+            
+            <section class="container">
+                <h1>Who We Are</h1>
+                <section class="people-cards">
+                    <article>
+                        
                     </article>
                 </section>
             </section>
