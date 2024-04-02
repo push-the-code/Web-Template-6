@@ -10,6 +10,7 @@
                 padding: 0;
                 margin: 0;
                 border: none;
+                text-align: center !important;
                 text-decoration: none;
                 box-sizing: border-box;
                 font-family: Sans-Serif;
@@ -47,9 +48,11 @@
             .main > .container {
                 width: 80%;
                 margin: 80px auto;
-                text-align: center;
+                text-align: center !important;
             }
-            
+            .main > .container:first-child > h1, p {
+                text-align: start !important;
+            }
             .main > .container > .slider {
                 width: 100%;
                 text-align: center;
@@ -79,8 +82,9 @@
                 border-radius: 100%;
                 padding: 5px 8px;
             }
-            
-            .main > section:nth-child(2) > h1, .main > section:nth-child(4) > h1 {
+            .main > section:nth-child(2) > h1,
+            .main > section:nth-child(4) > h1,
+            .main > section:nth-child(5) > h1{
                 border-bottom: 5px solid;
                 padding-bottom: 10px;
                 width: fit-content;
@@ -120,10 +124,13 @@
                 background: #000000;
                 color: #ffffff;
             }
-            .main > .container > .cards > article:nth-child(4) > h1 {
+            .main > .container > .cards > article:nth-child(4) > h1, p {
                 margin: 20px 0;
             }
             
+            .main > section:nth-child(3) > p {
+                text-align: center !important;
+            }
             .main > .container > .card-sec {
                 margin: 80px 0;
             }
@@ -149,6 +156,7 @@
             .main > .container > .card-sec > .price-card > p {
                 padding: 16px;
                 border-bottom: 0.5px solid #a9a9a9;
+                text-align: center !important;
             }
             .main > .container > .card-sec > .price-card > .price {
                 padding: 16px;
@@ -192,7 +200,7 @@
                 padding: 0 21px;
             }
             .main > .container > .people-cards > .description > article > h1, p, button {
-                text-align: start;
+                text-align: start !important;
                 margin: 15px 0;
             }
             .main > .container > .people-cards > .description > article > button {
@@ -204,6 +212,7 @@
                 background: #a9a9a9;
                 cursor: pointer;
             }
+            
         </style>
     </head>
     <body>
@@ -217,7 +226,7 @@
         </header>
         <div class="main">
             <section class="container">
-                <h1 style="font-size: 36px;">MARKETING</h1>
+                <h1 style="font-size: 36px; font-weight: bold;">MARKETING</h1>
                 <p>Template by w3.css</p>
                 <section class="slider">
                     <img src="https://www.w3schools.com/w3images/workbench.jpg" alt="workbench" width="100%" />
@@ -353,6 +362,10 @@
                         </article>
                     </article>
                 </section>
+            </section>
+            
+            <section class="container">
+                <h1>Contact Us</h1>
             </section>
         </div>
     </body>
