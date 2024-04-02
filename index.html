@@ -188,17 +188,19 @@
             .main > .container > .people-cards > article > img {
                 width: 100%;
             }
-            .main > .container > .people-cards > article > h1, p {
-                margin: 10px 0;
-                padding: 0 16px;
-                text-align: start;
+            .main > .container > .people-cards > .description > article {
+                padding: 0 21px;
             }
-            .main > .container > .people-cards > article > button {
+            .main > .container > .people-cards > .description > article > h1, p, button {
+                text-align: start;
+                margin: 15px 0;
+            }
+            .main > .container > .people-cards > .description > article > button {
                 background: #d3d3d3;
                 width: 100%;
-                padding: 12px 48px;
+                text-align: center !important;
             }
-            .main > .container > .people-cards > article > button:hover {
+            .main > .container > .people-cards > .description > article > button:hover {
                 background: #a9a9a9;
                 cursor: pointer;
             }
@@ -314,36 +316,41 @@
             <section class="container">
                 <h1>Who We Are</h1>
                 <section class="people-cards">
-                    <article>
+                    <article class="description">
                         <img src="https://www.w3schools.com/w3images/team1.jpg" alt="team1" />
-                        <h1 style="font-size: 30px; font-weight: 500;">Jane Doe</h1>
-                        <p>CEO &amp; Founder</p>
-                        <p>
-                            Phasellus eget enim eu lectus faucibus vestibulum.
-                            Suspendisse sodales pellentesque elementum.
-                        </p>
-                        <button type="button">Contact</button>
+                        <article>
+                            <h1 style="font-size: 30px; font-weight: 500;">Jane Doe</h1>
+                            <p>CEO &amp; Founder</p>
+                            <p>
+                                Phasellus eget enim eu lectus faucibus vestibulum.
+                                Suspendisse sodales pellentesque elementum.
+                            </p>
+                            <button type="button">Contact</button>
+                        </article>
                     </article>
-                    <article>
+                    <article class="description">
                         <img src="https://www.w3schools.com/w3images/team2.jpg" alt="team2" />
-                        <h1 style="font-size: 30px; font-weight: 500;">Mike Ross</h1>
-                        <p>Art Director</p>
-                        <p>
-                            Phasellus eget enim eu lectus faucibus vestibulum.
-                            Suspendisse sodales pellentesque elementum.
-                        </p>
-                        <button type="button">Contact</button>
+                        <article class="">
+                            <h1 style="font-size: 30px; font-weight: 500;">Mike Ross</h1>
+                            <p>Art Designer</p>
+                            <p>
+                                Phasellus eget enim eu lectus faucibus vestibulum.
+                                Suspendisse sodales pellentesque elementum.
+                            </p>
+                            <button type="button">Contact</button>
+                        </article>
                     </article>
-                    <article>
+                    <article class="description">
                         <img src="https://www.w3schools.com/w3images/team3.jpg" alt="team3" />
-                        
-                        <h1 style="font-size: 30px; font-weight: 500;">John Doe</h1>
-                        <p>Designer</p>
-                        <p>
-                            Phasellus eget enim eu lectus faucibus vestibulum.
-                            Suspendisse sodales pellentesque elementum.
-                        </p>
-                        <button type="button">Contact</button>
+                        <article>
+                            <h1 style="font-size: 30px; font-weight: 500;">John Doe</h1>
+                            <p>Designer</p>
+                            <p>
+                                Phasellus eget enim eu lectus faucibus vestibulum.
+                                Suspendisse sodales pellentesque elementum.
+                            </p>
+                            <button type="button">Contact</button>
+                        </article>
                     </article>
                 </section>
             </section>
