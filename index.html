@@ -213,6 +213,20 @@
                 cursor: pointer;
             }
             
+            .main > .container > .form {
+                width: 100%;
+                margin: 80px 0;
+                text-align: start;
+            }
+            .main > .container > .form > input {
+                margin: 0 0 10px 0;
+            }
+            .main > .container > .form > input, label {
+                width: 100%;
+                display: block;
+                text-align: start !important;
+                padding: 8px;
+            }
         </style>
     </head>
     <body>
@@ -366,6 +380,19 @@
             
             <section class="container">
                 <h1>Contact Us</h1>
+                <form class="form" accept-charset="utf-8">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name here.." />
+                    
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email here.." />
+                    
+                    <label for="subject">Subject</label>
+                    <input type="text" name="subject" id="subject" placeholder="Enter your subject here.." />
+                    
+                    <label for="message">Message</label>
+                    <input type="text" name="message" id="message" placeholder="Enter your message here.." />
+                </form>
             </section>
         </div>
     </body>
