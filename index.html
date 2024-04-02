@@ -4,6 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <title>Marketing</title>
         <style type="text/css" media="all">
             * {
@@ -29,11 +30,13 @@
                 padding: 12px 24px;
             }
             #header {
+                width: 100%;
                 text-align: center;
-                background: #d3d3d3;
+                background: #dddddd;
+                top: 0;
+                position: fixed;
             }
             #header > #navbar {
-                width: 100%;
                 display: flex;
             }
             #header > #navbar > a {
@@ -46,7 +49,7 @@
             }
             
             .main > .container {
-                width: 80%;
+                width: 70%;
                 margin: 80px auto;
                 text-align: center !important;
             }
@@ -56,6 +59,8 @@
             .main > .container > .slider {
                 width: 100%;
                 text-align: center;
+                display: flex;
+                flex-direction: column;
             }
             .main > .slider > img {
                 padding: 0;
@@ -67,25 +72,34 @@
             }
             .main > .container > .slider > .buttons {
                 display: flex;
-                justify-content: space-between;
-                width: 100%;
-                height: 40px;
+                height: 49px;
                 background: #616161;
+                justify-content: space-between;
             }
             .main > .container > .slider > .buttons > .forward {
                 float: right;
+                align-self: center;
+                font-size: 16px;
+                padding: 4px 6px;
+                margin: 0 16px;
                 border-radius: 100%;
-                padding: 5px 8px;
             }
             .main > .container > .slider > .buttons > .backward {
                 float: left;
+                align-self: center;
+                font-size: 16px;
+                padding: 4px 6px;
+                margin: 0 16px;
                 border-radius: 100%;
-                padding: 5px 8px;
             }
+            .main > .container > .slider > .buttons > button:hover {
+                cursor: pointer;
+            }
+            
             .main > section:nth-child(2) > h1,
             .main > section:nth-child(4) > h1,
             .main > section:nth-child(5) > h1{
-                border-bottom: 5px solid;
+                border-bottom: 5px solid #555555;
                 padding-bottom: 10px;
                 width: fit-content;
                 text-align: center;
@@ -135,7 +149,7 @@
                 margin: 80px 0;
             }
             .main > .container > .card-sec > .price-card {
-                width: 32.18%;
+                width: 31%;
                 display: inline-block;
                 border: 1px solid #a9a9a9;
                 margin: 0 5px;
@@ -155,19 +169,21 @@
             }
             .main > .container > .card-sec > .price-card > p {
                 padding: 16px;
+                margin: 0 !important;
                 border-bottom: 0.5px solid #a9a9a9;
                 text-align: center !important;
             }
             .main > .container > .card-sec > .price-card > .price {
                 padding: 16px;
                 line-height: 2;
+                margin: 0 !important;
             }
             .main > .container > .card-sec > .price-card > .price > h2 {
                 font-size: 34px;
             }
             .main > .container > .card-sec > .price-card > .sign-btn {
                 background: #e5e5e5;
-                padding: 24px;
+                padding: 12px;
             }
             .main > .container > .card-sec > .price-card > .sign-btn > button {
                 background: #4CAF50;
@@ -188,7 +204,7 @@
                 margin: 80px 0;
             }
             .main > .container > .people-cards > article {
-                width: 32.18%;
+                width: 31%;
                 margin: 0 5px;
                 display: inline-block;
                 box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
@@ -204,7 +220,7 @@
                 margin: 15px 0;
             }
             .main > .container > .people-cards > .description > article > button {
-                background: #d3d3d3;
+                background: #dddddd;
                 width: 100%;
                 text-align: center !important;
             }
@@ -220,6 +236,7 @@
             }
             .main > .container > .form > input {
                 margin: 0 0 10px 0;
+                border: 1px solid #d3d3d3;
             }
             .main > .container > .form > input, label {
                 width: 100%;
@@ -227,6 +244,58 @@
                 text-align: start !important;
                 padding: 8px;
             }
+            .main > .container > .form > input:hover {
+                cursor: pointer;
+            }
+            .main > .container > .form > button {
+                width: 100%;
+                background: #000000;
+                color: #d3d3d3;
+                padding: 8px;
+                margin: 32px 0 0 0;
+                text-align: center !important;
+            }
+            .main > .container > .form > button:hover {
+                background: #d3d3d3;
+                color: #000000;
+                cursor: pointer;
+            }
+            
+            .footer {
+                width: 100%;
+                background: #dddddd;
+                padding: 42px 0;
+                line-height: 3;
+                text-align: center !important;
+            }
+            .footer > button {
+                background: #000000;
+                color: #ffffff;
+                padding: 12px;
+            }
+            .footer > button:hover {
+                background: #d3d3d3;
+                color: #000000;
+                cursor: pointer;
+            }
+            .footer > p {
+                text-align: center !important;
+                margin: 16px 0;
+            }
+            .footer > p > span {
+                color: #000000;
+                font-size: 28px;
+                margin: 0 5px;
+            }
+            .footer > p > span > i:hover {
+                cursor: pointer;
+                color: #000000;
+                opacity: 0.65;
+            }
+            .footer > p:last-child > span {
+                font-size: initial;
+            }
+                
         </style>
     </head>
     <body>
@@ -239,7 +308,7 @@
             </nav>
         </header>
         <div class="main">
-            <section class="container">
+            <section class="container" id="home">
                 <h1 style="font-size: 36px; font-weight: bold;">MARKETING</h1>
                 <p>Template by w3.css</p>
                 <section class="slider">
@@ -247,8 +316,8 @@
                     <img src="https://www.w3schools.com/w3images/coffee.jpg" alt="coffee" style="display: none;" />
                     <img src="https://www.w3schools.com/w3images/sound.jpg" alt="sound" style="display: none;" />
                     <section class="buttons">
-                         <button class="forward" type="button"> → </button>
-                         <button class="backward" type="button"> ← </button>
+                         <button class="forward" type="button"><i class="fa fa-arrow-left"></i></button>
+                         <button class="backward" type="button"><i class="fa fa-arrow-right"></i></button>
                     </section>
                 </section>
             </section>
@@ -293,10 +362,10 @@
                 <section class="card-sec">
                     <article class="price-card">
                         <h2>Basic</h2>
-                        <p>100GB Storage</p>
-                        <p>100 Emails</p>
-                        <p>10 Domains</p>
-                        <p>Endless Support</p>
+                        <p><b>100GB</b> Storage</p>
+                        <p><b>100</b> Emails</p>
+                        <p><b>10</b> Domains</p>
+                        <p><b>Endless</b> Support</p>
                         <article class="price">
                             <h2>&dollar; 10</h2>
                             <small style="color: #808080;">per month</small>
@@ -307,10 +376,10 @@
                     </article>
                     <article class="price-card">
                         <h2>Pro</h2>
-                        <p>250GB Storage</p>
-                        <p>150 Emails</p>
-                        <p>15 Domains</p>
-                        <p>Endless Support</p>
+                        <p><b>250GB</b> Storage</p>
+                        <p><b>150</b> Emails</p>
+                        <p><b>15</b> Domains</p>
+                        <p><b>Endless</b> Support</p>
                         <article class="price">
                             <h2>&dollar; 25</h2>
                             <small style="color: #808080;">per month</small>
@@ -321,10 +390,10 @@
                     </article>
                     <article class="price-card">
                         <h2>Premium</h2>
-                        <p>500GB Storage</p>
-                        <p>200 Emails</p>
-                        <p>20 Domains</p>
-                        <p>Endless Support</p>
+                        <p><b>500GB</b> Storage</p>
+                        <p><b>200</b> Emails</p>
+                        <p><b>20</b> Domains</p>
+                        <p><b>Endless</b> Support</p>
                         <article class="price">
                             <h2>&dollar; 50</h2>
                             <small style="color: #808080;">per month</small>
@@ -379,21 +448,39 @@
             </section>
             
             <section class="container">
+                <a href="contact"></a>
                 <h1>Contact Us</h1>
                 <form class="form" accept-charset="utf-8">
                     <label for="name">Name</label>
-                    <input type="text" name="name" id="name" placeholder="Enter your name here.." />
+                    <input type="text" name="name" id="name" placeholder="Enter your name here.." required="required" />
                     
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Enter your email here.." />
+                    <input type="email" name="email" id="email" placeholder="Enter your email here.." required="required" />
                     
                     <label for="subject">Subject</label>
-                    <input type="text" name="subject" id="subject" placeholder="Enter your subject here.." />
+                    <input type="text" name="subject" id="subject" placeholder="Enter your subject here.." required="required" />
                     
                     <label for="message">Message</label>
-                    <input type="text" name="message" id="message" placeholder="Enter your message here.." />
+                    <input type="text" name="message" id="message" placeholder="Enter your message here.." required="required" />
+                    
+                    <button type="button">Send</button>
                 </form>
             </section>
         </div>
+        
+        <footer class="footer">
+            <h3>Footer</h3>
+            <a href="#home"></a>
+            <button type="button"><i class="fa-solid fa-arrow-up"></i> Back to top</button>
+            <p>
+                <span><i class="fa-brands fa-square-facebook"></i></span>
+                <span><i class="fa-brands fa-square-instagram"></i></span>
+                <span><i class="fa-brands fa-square-snapchat"></i></span>
+                <span><i class="fa-brands fa-square-pinterest"></i></span>
+                <span><i class="fa-brands fa-square-twitter"></i></span>
+                <span><i class="fa-brands fa-linkedin"></i></span>
+            </p>
+            <p>Powered by <span style="text-decoration: underline;">Pushkar!</span></p>
+        </footer>
     </body>
 </html>
