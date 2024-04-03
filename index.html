@@ -316,7 +316,14 @@
                     margin: 20px 0;
                 }
             }
-                
+            @media only screen and (max-width: 430px) {
+                .main > .container > .cards {
+                    display: table;
+                }
+                .main > .container > .cards > article {
+                    float: none;
+                }
+            }    
         </style>
     </head>
     <body>
